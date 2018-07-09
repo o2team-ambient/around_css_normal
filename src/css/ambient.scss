@@ -1,0 +1,681 @@
+ $container: '.o2_ambient_around-css-normal';
+ $item: '.o2_ambient_around-css-normal_item';
+ $item_inner: '.o2_ambient_around-css-normal_item_inner';
+ 
+ @function left($x) {
+   @return $x / 1920 * 100%;
+ }
+ @function top($y) {
+   @return $y / 1080 * 100%;
+ }
+ @function tlx($x1, $x2) {
+   @return ($x1 - $x2) / 1920 * 100vw;
+ }
+ @function tly($y1, $y2) {
+   @return ($y1 - $y2)/ 1080 * 100vh;
+ }
+ @function per($c, $f) {
+   @return ($c / $f * 100%)
+ }
+ 
+ #{$container} {
+   #{$item} {
+     position: absolute;
+     opacity: 0;
+     &_inner {
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       left: 0;
+       top: 0;
+       border-radius: 50%;
+     }
+     &:nth-child(1) {
+       $x: 824;
+       $y: 484;
+       $f: 140;
+       width: 14px;
+       height: 14px;
+       left: left($x);
+       top: top($y);
+       animation: x_p1 #{140 / 24 * 1s} both infinite, opacity_p1 #{140 / 24 * 1s} infinite;
+ 
+       #{$item_inner} {
+         background-color: #00ABFF;
+         animation: y_p1 #{140 / 24 * 1s} linear both infinite;
+       }
+ 
+       @keyframes x_p1 {
+         0% {
+           transform: translate(0, 0)
+         }
+         100% {
+           transform: translateX(tlx(1612, $x))
+         }
+       }
+ 
+       @keyframes y_p1 {
+         0% {
+           transform: translate(0, 0)
+         }
+         100% {
+           transform: translateY(tly(1130, $x))
+         }
+       }
+ 
+       @keyframes opacity_p1 {
+         from {
+           opacity: 0;
+         }
+         #{per(26, $f)} {
+           opacity: 1;
+         }
+         #{per(81, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+ 
+     &:nth-child(2) {
+       $x: 1376;
+       $y: 278;
+       $f: 141;
+       $del: 19 / 24 * 1s;
+       left: left($x);
+       top: top($y);
+       animation: x_p2 #{$f / 24 * 1s} $del infinite, opacity_p2 #{$f / 24 * 1s} $del infinite;
+       width: 14px;
+       height: 14px;
+       #{$item_inner} {
+         background-color: #00ABFF;
+         animation: y_p2 #{$f / 24 * 1s} linear $del infinite;
+       }
+       @keyframes x_p2 {
+         0% {
+           transform: translate(0, 0)
+         }
+         100% {
+           transform: translateX(tlx(196, $x))
+         }
+       }
+ 
+       @keyframes y_p2 {
+         0% {
+           transform: translate(0, 0)
+         }
+         100% {
+           transform: translateY(tly(-200, $x))
+         }
+       }
+ 
+       @keyframes opacity_p2 {
+         from {
+           opacity: 0;
+         }
+         #{per(29, $f)} {
+           opacity: 1;
+         }
+         #{per(73, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+ 
+     &:nth-child(3) {
+       $x: 1107.5;
+       $y:787.5;
+       $f: 118;
+       $del: (42 / $f * 1s);
+       width: 14px;
+       height: 14px;
+       left: left($x);
+       top: top($y);
+       animation: x_p3 #{$f / 24 * 1s} $del infinite, opacity_p3 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+         background-color: #00ABFF;
+         animation: y_p3 #{$f / 24 * 1s} linear $del infinite;
+       }
+ 
+       @keyframes x_p3 {
+         100% {
+           transform: translateX(tlx(1174, $x))
+         }
+       }
+ 
+       @keyframes y_p3 {
+         100% {
+           transform: translateY(tly(-176, $x))
+         }
+       }
+ 
+       @keyframes opacity_p3 {
+         from {
+           opacity: 0;
+         }
+         #{per(33, $f)} {
+           opacity: 1;
+         }
+         #{per(83, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+ 
+     &:nth-child(4) {
+       $f: 94;
+       $del: (95 / 24 * 1s);
+       $x: 878;
+       $y: 415;
+       width: 6px;
+       height: 6px;
+       left: left($x);
+       top: top($y);
+       animation: x_p4 #{$f / 24 * 1s} $del infinite, opacity_p4 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+         background-color: #00ABFF;
+         animation: y_p4 #{$f / 24 * 1s} linear $del infinite;
+ 
+       }
+       @keyframes x_p4 {
+         0% {
+           transform: translate(0, 0)
+         }
+         100% {
+           transform: translateX(tlx(2070, $x))
+         }
+       }
+ 
+       @keyframes y_p4 {
+         0% {
+           transform: translate(0, 0)
+         }
+         100% {
+           transform: translateY(tly(68, $x))
+         }
+       }
+ 
+       @keyframes opacity_p4 {
+         from {
+           opacity: 0;
+         }
+         #{per(41, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+ 
+     &:nth-child(5) {
+       $f: 127;
+       $del: (163 / 24 * 1s);
+       $x: 964;
+       $y: 456;
+       width: 6px;
+       height: 6px;
+       left: left($x);
+       top: top($y);
+       animation: x_p5 #{$f / 24 * 1s} $del infinite, opacity_p5 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+         background-color: #10DE95;
+         animation: y_p5 #{$f / 24 * 1s} linear $del infinite;
+       }
+ 
+       @keyframes x_p5 {
+         100% {
+           transform: translateX(tlx(2054, $x))
+         }
+       }
+ 
+       @keyframes y_p5 {
+         100% {
+           transform: translateY(tly(890, $x))
+         }
+       }
+ 
+       @keyframes opacity_p5 {
+         from {
+           opacity: 0;
+         }
+         #{per(39, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+ 
+     &:nth-child(6) {
+       $f: 118;
+       $del:238 / 24 * 1s;
+       $x: 1178;
+       $y: 400;
+       width: 6px;
+       height: 6px;
+       left: left($x);
+       top: top($y);
+       animation: x_p6 #{$f / 24 * 1s} $del infinite, opacity_p6 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+       background-color: #10DE95;
+         animation: y_p6 #{$f / 24 * 1s} linear $del infinite;
+       }
+ 
+       @keyframes x_p6 {
+         100% {
+           transform: translateX(tlx(802, $x))
+         }
+       }
+ 
+       @keyframes y_p6 {
+         100% {
+           transform: translateY(tly(-170, $x))
+         }
+       }
+ 
+       @keyframes opacity_p6 {
+         from {
+           opacity: 0;
+         }
+         #{per(48, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+ 
+     &:nth-child(7) {
+       $f: 118;
+       $del: 285 / 24 * 1s;
+       $x: 654;
+       $y: 770;
+       width: 6px;
+       height: 6px;
+       left: left($x);
+       top: top($y);
+       animation: x_p7 #{$f / 24 * 1s} $del infinite, opacity_p7 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+         background-color: #10DE95;
+         animation: y_p7 #{$f / 24 * 1s} linear $del infinite;
+       }
+ 
+       @keyframes x_p7 {
+         100% {
+           transform: translateX(tlx(2042, $x))
+         }
+       }
+ 
+       @keyframes y_p7 {
+         100% {
+           transform: translateY(tly(992, $x))
+         }
+       }
+ 
+       @keyframes opacity_p7 {
+         from {
+           opacity: 0;
+         }
+         #{per(54, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+ 
+     &:nth-child(8) {
+       $f: 94;
+       $del: 362 / 24 * 1s;
+       $x: 850;
+       $y: 540;
+       width: 14px;
+       height: 14px;
+       left: left($x);
+       top: top($y);
+       animation: x_p8 #{$f / 24 * 1s} $del infinite, opacity_p8 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+         background-color: #10DE95;
+         animation: y_p8 #{$f / 24 * 1s} linear $del infinite;
+       }
+ 
+       @keyframes x_p8 {
+         100% {
+           transform: translateX(tlx(334, $x))
+         }
+       }
+ 
+       @keyframes y_p8 {
+         100% {
+           transform: translateY(tly(1130, $x))
+         }
+       }
+ 
+       @keyframes opacity_p8 {
+         from {
+           opacity: 0;
+         }
+         #{per(44, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+ 
+     &:nth-child(9) {
+       $f: 94;
+       $del: (51 / 24 * 1s);
+       $x: -138;
+       $y: 774;
+       width: 14px;
+       height: 14px;
+       left: left($x);
+       top: top($y);
+       animation: x_p9 #{$f / 24 * 1s} $del infinite, opacity_p9 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+         background-color: #10DE95;
+         animation: y_p9 #{$f / 24 * 1s} linear $del infinite;
+       }
+ 
+       @keyframes x_p9 {
+         100% {
+           transform: translateX(tlx(-138, $x))
+         }
+       }
+ 
+       @keyframes y_p9 {
+         100% {
+           transform: translateY(tly(774, $x))
+         }
+       }
+ 
+       @keyframes opacity_p9 {
+         from {
+           opacity: 0;
+         }
+         #{per(35, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+ 
+     &:nth-child(10) {
+       $f: 104;
+       $del: 51 / 24 * 1s;
+       $x: 1952;
+       $y: -76;
+       width: 14px;
+       height: 14px;
+       left: left($x);
+       top: top($y);
+       animation: x_p10 #{$f / 24 * 1s} $del infinite, opacity_p10 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+         background-color: #00ABFF;
+         animation: y_p10 #{$f / 24 * 1s} linear $del infinite;
+       }
+ 
+       @keyframes x_p10 {
+         100% {
+           transform: translateX(tlx(-138, $x))
+         }
+       }
+ 
+       @keyframes y_p10 {
+         100% {
+           transform: translateY(tly(774, $x))
+         }
+       }
+ 
+       @keyframes opacity_p3 {
+         from {
+           opacity: 0;
+         }
+         #{per(35, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+ 
+     &:nth-child(11) {
+       $f: 94;
+       $del: 78 / 24 * 1s;
+       $x: 1072;
+       $y: 846;
+       width: 14px;
+       height: 14px;
+       left: left($x);
+       top: top($y);
+       animation: x_p11 #{$f / 24 * 1s} $del infinite, opacity_p11 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+         background-color: #00ABFF;
+         animation: y_p11 #{$f / 24 * 1s} linear $del infinite;
+       }
+ 
+       @keyframes x_p11 {
+         100% {
+           transform: translateX(tlx(-138, $x))
+         }
+       }
+ 
+       @keyframes y_p11 {
+         100% {
+           transform: translateY(tly(774, $x))
+         }
+       }
+ 
+       @keyframes opacity_p11 {
+         from {
+           opacity: 0;
+         }
+         #{per(36, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+     &:nth-child(12) {
+       $f: 140;
+       $del: (109 / 24 * 1s);
+       $x: 614;
+       $y: 714;
+       width: 14px;
+       height: 14px;
+       left: left($x);
+       top: top($y);
+       animation: x_p12 #{$f / 24 * 1s} $del infinite, opacity_p12 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+         background-color: #00ABFF;
+         animation: y_p12 #{$f / 24 * 1s} linear $del infinite;
+       }
+ 
+       @keyframes x_p12 {
+         100% {
+           transform: translateX(tlx(1952, $x))
+         }
+       }
+ 
+       @keyframes y_p12 {
+         100% {
+           transform: translateY(tly(-76, $x))
+         }
+       }
+ 
+       @keyframes opacity_p12 {
+         from {
+           opacity: 0;
+         }
+         #{per(26, $f)} {
+           opacity: 1;
+         }
+         #{per(81, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+     &:nth-child(13) {
+       $f: 141;
+       $del: 109 / 24 * 1s;
+       $x: 446;
+       $y: 540;
+       width: 6px;
+       height: 6px;
+       left: left($x);
+       top: top($y);
+ 
+       animation: x_p13 #{$f / 24 * 1s} $del infinite, opacity_p13 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+         background-color: #00ABFF;
+         animation: y_p13 #{$f / 24 * 1s} linear $del infinite;
+       }
+ 
+       @keyframes x_p13 {
+         100% {
+           transform: translateX(tlx(480, $x))
+         }
+       }
+ 
+       @keyframes y_p13 {
+         100% {
+           transform: translateY(tly(-184, $x))
+         }
+       }
+ 
+       @keyframes opacity_p13 {
+         from {
+           opacity: 0;
+         }
+         #{per(29, $f)} {
+           opacity: 1;
+         }
+         #{per(73, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+ 
+     &:nth-child(14) {
+       $f: 118;
+       $del: 156 / 24 * 1s;
+       $x: 658;
+       $y: 766;
+       width: 6px;
+       height: 6px;
+       left: left($x);
+       top: top($y);
+       animation: x_p14 #{$f / 24 * 1s} $del infinite, opacity_p14 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+         background-color: #10DE95;
+         animation: y_p14 #{$f / 24 * 1s} linear $del infinite;
+       }
+ 
+       @keyframes x_p14 {
+         100% {
+           transform: translateX(tlx(1174, $x))
+         }
+       }
+ 
+       @keyframes y_p14 {
+         100% {
+           transform: translateY(tly(-176, $x))
+         }
+       }
+ 
+       @keyframes opacity_p14 {
+         from {
+           opacity: 0;
+         }
+         #{per(33, $f)} {
+           opacity: 1;
+         }
+         #{per(83, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+ 
+     &:nth-child(15) {
+       $f: 94;
+       $del: 109 / 24 * 1s;
+       $x: 432;
+       $y: 772;
+       width: 6px;
+       height: 6px;
+       left: left($x);
+       top: top($y);
+       animation: x_p15 #{$f / 24 * 1s} $del infinite, opacity_p15 #{$f / 24 * 1s} $del infinite;
+ 
+       #{$item_inner} {
+         background-color: #10DE95;
+         animation: y_p15 #{$f / 24 * 1s} linear $del infinite;
+       }
+ 
+       @keyframes x_p15 {
+         100% {
+           transform: translateX(tlx(1962, $x))
+         }
+       }
+ 
+       @keyframes y_p15 {
+         100% {
+           transform: translateY(tly(334, $x))
+         }
+       }
+ 
+       @keyframes opacity_p15 {
+         from {
+           opacity: 0;
+         }
+         #{per(41, $f)} {
+           opacity: 1;
+         }
+         100% {
+           opacity: 0;
+         }
+       }
+     }
+   }
+ }
+ 
