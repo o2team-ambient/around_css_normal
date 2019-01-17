@@ -3,7 +3,7 @@
   "demoUrl": "http://jdc.jd.com/demo/ambient/around-css-normal/",
   "title": "around-css-normal",
   "github": "https://github.com/o2team-ambient/around-css-normal",
-  "demoSnippet": "<link href=\"//storage.jd.com/ambient/styles-around-css-normal.css?t=1531137520000\" rel=\"stylesheet\"></link><!-- S 主体内容 -->\n  <div class=\"o2team_ambient_main\">\n  </div>\n  <!-- E 主体内容 --><script src=\"//storage.jd.com/ambient/bundle-around-css-normal.js?t=1531137520000\"></script>",
-  "controlUrl": "//storage.jd.com/ambient/control-around-css-normal.js?t=1531137520000",
-  "configUrl": "//storage.jd.com/ambient/config-around-css-normal.js?t=1531137520000"
+  "demoSnippet": "<link href=\"//storage.jd.com/ambient/styles-around-css-normal.css?t=1547710885000\" rel=\"stylesheet\"></link><!-- S 主体内容 -->\n  <div class=\"o2team_ambient_main\">\n  </div>\n  <!-- E 主体内容 --><script src=\"//storage.jd.com/ambient/bundle-around-css-normal.js?t=1547710885000\"></script>",
+  "controlUrl": "//storage.jd.com/ambient/control-around-css-normal.js?t=1547710885000",
+  "configUrl": "//storage.jd.com/ambient/config-around-css-normal.js?t=1547710885000"
 }
