@@ -2,6 +2,7 @@
   "author": "liujianchao1",
   "demoUrl": "http://jdc.jd.com/demo/ambient/around-css-normal/",
   "title": "around-css-normal",
+  "ambName": "随机方向粒子",
   "github": "https://github.com/o2team-ambient/around-css-normal",
   "demoSnippet": "<link href=\"//storage.jd.com/ambient/styles-around-css-normal.css?t=1547710885000\" rel=\"stylesheet\"></link><!-- S 主体内容 -->\n  <div class=\"o2team_ambient_main\">\n  </div>\n  <!-- E 主体内容 --><script src=\"//storage.jd.com/ambient/bundle-around-css-normal.js?t=1547710885000\"></script>",
   "controlUrl": "//storage.jd.com/ambient/control-around-css-normal.js?t=1547710885000",
