@@ -1,7 +1,7 @@
 {
   "author": "liujianchao1",
-  "demoUrl": "http://jdc.jd.com/demo/ambient/around-css-normal/",
-  "miniDemoUrl": "http://jdc.jd.com/demo/ambient/around-css-normal/index_demo.html",
+  "demoUrl": "//o2team-ambient.github.io/around-css-normal/dist/",
+  "miniDemoUrl": "//o2team-ambient.github.io/around-css-normal/dist/index_demo.html",
   "title": "around-css-normal",
   "ambName": "随机方向粒子",
   "github": "https://github.com/o2team-ambient/around-css-normal",
