@@ -5,9 +5,9 @@
   "title": "around_css_normal",
   "ambName": "随机方向粒子",
   "github": "https://github.com/o2team-ambient/around-css-normal",
-  "demoSnippet": "<link href=\"//storage.jd.com/ambient/styles-around-css-normal.css?t=1552531141000\" rel=\"stylesheet\"></link><!-- S 主体内容 -->\n  <div class=\"o2team_ambient_main\">\n  </div>\n  <!-- E 主体内容 --><script src=\"//storage.jd.com/ambient/bundle-around-css-normal.js?t=1552531141000\"></script>",
-  "controlUrl": "//storage.jd.com/ambient/control-around-css-normal.js?t=1552531141000",
-  "configUrl": "//storage.jd.com/ambient/config-around-css-normal.js?t=1552531141000",
+  "demoSnippet": "<link href=\"//storage.jd.com/ambient/styles-around_css_normal.css?t=1565786038000\" rel=\"stylesheet\"></link><!-- S 主体内容 -->\n  <div class=\"o2team_ambient_main\">\n  </div>\n  <!-- E 主体内容 --><script src=\"//storage.jd.com/ambient/bundle-around_css_normal.js?t=1565786038000\"></script>",
+  "controlUrl": "//storage.jd.com/ambient/control-around_css_normal.js?t=1565786038000",
+  "configUrl": "//storage.jd.com/ambient/config-around_css_normal.js?t=1565786038000",
   "placeholderImg": "//storage.jd.com/ambient/around-css-normal_placeholder.png?t=1554260888000",
   "gifImg": "//storage.jd.com/ambient/around-css-normal_motion.gif?t=1554088715000",
   "spriteImg": "//storage.jd.com/ambient/around-css-normal_sprite.png?t=1554260888000"
